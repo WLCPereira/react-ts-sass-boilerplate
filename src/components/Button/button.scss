@@ -1,0 +1,13 @@
+@import 'variables';
+
+.app-btn {
+  appearance: none;
+  background-color: $main;
+  padding: 1rem 1.4rem;
+  font-size: 1.6rem;
+  border-radius: 0.4rem;
+  &:hover {
+    padding: 1rem 1.4rem;
+    background-color: lighten($main, 15);
+  }
+}

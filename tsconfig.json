@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": false,
+    "jsx": "react",
+    "lib": ["esnext", "dom", "dom.iterable", "ESNext"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": false,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "target": "ESNext",
+    "removeComments": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "./@types",
+    "paths": {
+      "@Pages": ["./pages/index.ts"],
+      "@Services/*": ["./services/*"],
+      "@Components/*": ["./components/*"],
+      "@BarrelComponents": ["./components/index.ts"],
+      "@Styles/*": ["./styles/*"]
+    },
+  },
+  "exclude": ["node_modules", "build"],
+  "include": ["./src/**/*", "./config/**/*.ts", "webpack.config.ts"]
+}
